@@ -105,10 +105,14 @@ ol {
 
 .main-button:hover {
     background: var(--ocean-color);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
 }
 
 .main-button:focus {
     background-color: var(--ocean-color);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
 }
 
 .title-name {
@@ -176,17 +180,23 @@ ol {
     color: var(--white-color);
     cursor: pointer;
     border: 1px solid transparent;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
 }
 
 .menu-button:focus {
     color: var(--white-color);
     background-color: var(--ocean-color);
     border: 1px solid transparent;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
 }
 
 .link:focus,
 .link:hover {
     color: var(--ocean-color);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
 }
 
 .benefits {
@@ -217,15 +227,19 @@ ol {
     content: "";
     width: 100%;
     height: 4px;
-    background: #ffffff;
+    background: var(--white-color);
     border-radius: 2px;
 }
 
 .color:hover::before {
-    background-color: #ffffff;
+    background-color: var(--white-color);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
 }
 .color:hover::after {
-    background-color: #404BBF;
+    background-color: var(--ocean-color);  
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
 }
 
 
@@ -475,25 +489,31 @@ list-style-type: none;
       width: 40px;
       height: 40px;
       border-radius: 50%;
-      background-color: #4D5AE5;
+      background-color: var(--iris-color);
   }
 
   .social-links .social-link:hover {
-      background-color: #404BBF;
+      background-color: var(--ocean-color);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
   }
 
  .social-links .social-link.foot:hover {
-     background-color: #31D0AA;
+     background-color: var(--green-color);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
  }
 
 
   .social-links .social-link .icon {
         display: inline-flex;
-        fill: #FFFFFF;
+        fill: var(--white-color);
   }
 
   .social-links .social-link .icon:hover {
-      fill: #FFFFFF;
+      fill: var(--white-color);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
   }
 
   .social-div {
@@ -532,7 +552,7 @@ display: block;
       width: 1158px;
       margin: 0 auto;
       padding: 0 15px;
-      /* background-color: #31D0AA; */
+      /* background-color: var(--green-color); */
       
   }
 
@@ -546,23 +566,27 @@ display: block;
     width: 168px;
     height: 88px;
     background-color: var(--white-color);
-    border: 1px solid #8E8F99;
+    border: 1px solid var(--light-slate-color);                                                  
     border-radius: 4px;
     gap: 24px;
 }
 
   .customers-links .customers-link:hover {
       background-color: var(--white-color);
-    border: 1px solid #404BBF;
+    border: 1px solid var(--ocean-color);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
   }
 
   .customers-links .customers-link .icon {
       display: inline-flex;
-    fill: #8E8F99;
+    fill: var(--light-slate-color);
   }
 
  .customers-links .customers-link:hover .icon {
-     fill: #404BBF;
+     fill: var(--ocean-color);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
  }
 
 
@@ -577,8 +601,7 @@ display: block;
         align-items: center;
         width: 264px;
         height: 112px;
-        background-color:  #F4F4FD;;
-        /* border: 1px solid #8E8F99; */
+        background-color: var(--cloud-color);
         border-radius: 4px;
         gap: 24px;
   }
@@ -605,30 +628,26 @@ position: relative;
 
 .overlay {
     padding: 8px;
-    background-color: #4D5AE5;
+    background-color: var(--iris-color);        
     font-size: 16px;
     line-height: var(--heightp-line);
     letter-spacing: 0.02em;
-    color: #F4F4FD;
+    color: var(--cloud-color);
 
     position: absolute;
     top: 0px;
     left: 0px;
     width: 100%;
     height: 100%;
-    /* transform: translate(0, 120); */
     transition: transform 250ms ease-in-out;
-transform: translateY(100%);
-
+    transform: translateY(100%);
 }
 
-.box:hover .overlay {
-    
-transform: translateY(0);
+.box:hover .overlay {    
+    transform: translateY(0);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
 }
-
-
-
 
 .chess-wrap {
     padding: 32px 16px;
