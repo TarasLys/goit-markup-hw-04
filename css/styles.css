@@ -663,9 +663,6 @@ position: relative;
     opacity: 0;
     pointer-events: none;
     }
-    
-   
- 
 
  .backdrop {
     position: fixed;
@@ -676,34 +673,31 @@ position: relative;
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 1;
     visibility: visible;
-    /* transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
  }
 
  .modal {
      position: relative;
-     background-color: #fefefe;
-     
     margin-left: auto;
     margin-right: auto;
     margin-top: 80px;
-    
      border: 1px solid #888;
     width: 408px;
     height: 584px;
-    background: #FCFCFC;
+    background: var(--dairy-color); 
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 4px;
 
  }
 
  .button-close {
-    background: #E7E9FC;
+    background: var(--cornflower-color);                        
         border: 1px solid rgba(0, 0, 0, 0.1);
         border-radius: 50%;
         width: 24px;
         margin-top: 24px;
-       margin-left: 360px;
-    
+       margin-left: 360px; 
  }
 
 
